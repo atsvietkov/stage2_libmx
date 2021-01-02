@@ -5,7 +5,7 @@ int mx_bubble_sort(int *arr, int size) {
     int tmp;
     int swap = 0;
     for(int i = 0; i < size-1; i++) {
-        for(int j = 0; j < size-1; j++) {
+        for(int j = 0; j < size-i-1; j++) {
             if(arr[j] > arr[j + 1]) {
                 tmp = arr[j];
                 arr[j] = arr[j+1];
@@ -26,7 +26,7 @@ int mx_bubble_sort(int *arr, int size) {
 //     int arr5[7] = {-2,20,54,86,60,73,52};
 //     printf("%i\n", mx_bubble_sort(arr1, 9));
 //     printf("%i\n", mx_bubble_sort(arr2, 2));
-//     printf("%i\n", mx_bubble_sort(arr3, 1));
+//     printf("%i\n", mx_bubble_sort(arr3, 13));
 //     printf("%i\n", mx_bubble_sort(arr4, 15));
 //     printf("%i\n", mx_bubble_sort(arr5, 7));
 // }
