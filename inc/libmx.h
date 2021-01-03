@@ -11,7 +11,7 @@ void mx_print_strarr(char **arr, const char *delim);
 void mx_printint(int n);
 char *mx_nbr_to_hex(unsigned long nbr);
 int mx_bubble_sort(int *arr, int size);
-int mx_quicksort(int *arr, int left, int right);
+int mx_quicksort(int *arr, int left, int right);    // check validity
 //char *mx_itoa(int number);
 
 //Utils: advanced
@@ -19,3 +19,4 @@ int mx_quicksort(int *arr, int left, int right);
 double mx_pow(double n, unsigned int pow);
 int mx_sqrt(int x);
 unsigned long mx_hex_to_nbr(const char *hex);
+void mx_foreach(int *arr, int size, void (*f)(int));
