@@ -12,3 +12,8 @@ void mx_printint(int n);
 char *mx_nbr_to_hex(unsigned long nbr);
 int mx_bubble_sort(int *arr, int size);
 int mx_quicksort(int *arr, int left, int right);
+//char *mx_itoa(int number);
+
+//Utils: advanced
+
+int mx_sqrt(int x);
