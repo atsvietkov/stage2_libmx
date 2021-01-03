@@ -24,3 +24,4 @@ int mx_binary_search(char **arr, int size, const char *s, int *count);
 
 //Strings: basic
 int mx_strlen(const char *s);
+void mx_swap_char(char *s1, char *s2);
