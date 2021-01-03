@@ -16,4 +16,5 @@ int mx_quicksort(int *arr, int left, int right);
 
 //Utils: advanced
 
+double mx_pow(double n, unsigned int pow);
 int mx_sqrt(int x);
