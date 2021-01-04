@@ -29,3 +29,4 @@ char *mx_strcpy(char *dst, const char *src);
 int mx_strcmp(const char *s1, const char *s2);
 char *mx_strcat(char *s1, const char *s2);
 char *mx_strnew(const int size);
+char *mx_strdup(const char *s1);
