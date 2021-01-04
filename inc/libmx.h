@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LIBMX.H
+#define LIBMX.H
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -30,3 +31,6 @@ int mx_strcmp(const char *s1, const char *s2);
 char *mx_strcat(char *s1, const char *s2);
 char *mx_strnew(const int size);
 char *mx_strdup(const char *s1);
+
+
+#endif LIBMX.H
