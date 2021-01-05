@@ -1,5 +1,4 @@
-#ifndef LIBMX_H
-#define LIBMX_H
+#pragma once
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -35,6 +34,3 @@ char *mx_strdup(const char *s1);
 char *mx_strjoin(const char *s1, const char *s2);
 void mx_strdel(char **str);
 void mx_del_strarr(char ***arr);
-
-
-#endif //LIBMX_H
