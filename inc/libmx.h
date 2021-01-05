@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <malloc.h>
 
 //Utils: basic
 void mx_printchar(char c);
@@ -32,6 +33,7 @@ char *mx_strcat(char *restrict s1, const char *restrict s2);
 char *mx_strnew(const int size);
 char *mx_strdup(const char *s1);
 char *mx_strjoin(const char *s1, const char *s2);
+void mx_strdel(char **str);
 
 
 #endif LIBMX.H
