@@ -1,6 +1,6 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
-// #include "../inc/libmx.h"
+// #include "../inc/../inc/libmx.h"
 // void mx_printchar(char c) {
 //     write(1, &c, 1);
 // }

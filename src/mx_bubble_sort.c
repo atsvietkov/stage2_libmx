@@ -1,5 +1,5 @@
-#include "libmx.h"
-// #include "../inc/libmx.h"
+#include "../inc/libmx.h"
+// #include "../inc/../inc/libmx.h"
 
 int mx_bubble_sort(int *arr, int size) {
     int tmp;

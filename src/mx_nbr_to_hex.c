@@ -1,5 +1,5 @@
-// #include "../inc/libmx.h"
-#include "libmx.h"
+// #include "../inc/../inc/libmx.h"
+#include "../inc/libmx.h"
 
 char *mx_nbr_to_hex(unsigned long nbr) {
     // LONG MAX = 4 294 967 295
