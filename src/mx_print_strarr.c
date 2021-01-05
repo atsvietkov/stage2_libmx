@@ -1,10 +1,5 @@
 #include "../inc/libmx.h"
 
-// #include "../inc/../inc/libmx.h"
-// void mx_printchar(char c) {
-//     write(1, &c, 1);
-// }
-
 void mx_print_strarr(char **arr, const char *delim) {
     if (arr && delim) {
         for (int i = 0; arr[i] != NULL; i++) {
@@ -16,8 +11,3 @@ void mx_print_strarr(char **arr, const char *delim) {
         mx_printchar(10);
     }
 }
-
-// int main() {
-//     char *arr[] = {"Hello", "mr", "Anderson"};
-//     mx_print_strarr(arr, "----");
-// }

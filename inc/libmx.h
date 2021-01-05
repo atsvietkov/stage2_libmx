@@ -1,9 +1,16 @@
 #pragma once
 
+#define INT_MAX  2147483647
+#define INT_MIN -2147483648
+#define LONG MAX 4294967295
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdbool.h>
 #include <malloc.h>
+
+// not task func
+void mx_printstrn(const char *s);
 
 //Utils: basic
 void mx_printchar(char c);
