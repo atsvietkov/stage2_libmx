@@ -1,0 +1,11 @@
+#include "../inc/libmx.h"
+
+void mx_print_intarr(int *arr, int n) {
+    int i = 0;
+    while (i<n) {
+        mx_printint(arr[i]);
+        mx_printchar(' ');
+        i++;
+    }
+    mx_printchar(10);
+}

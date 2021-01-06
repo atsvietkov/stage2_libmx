@@ -11,6 +11,8 @@
 
 // not task func
 void mx_printstrn(const char *s);
+void mx_printintn(int n);
+void mx_print_intarr(int *arr, int n);
 
 //Utils: basic
 void mx_printchar(char c);

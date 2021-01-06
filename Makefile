@@ -1,18 +1,6 @@
 # It is not Makefile, it is bullshit.
 # Don't forget repair this.
 
-# NAME = libmx.addprefix
-
-# COMP = clang
-# CFLG = -std=c11 -Wall -Wpedantic -Werror -Wextra
-
-# SRC_DIR = src
-# INC_DIR = inc
-# OBJ_DIR = obj
-
-# INC = libmx.h
-# INC
-
 CC = clang
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
