@@ -49,3 +49,4 @@ char *mx_file_to_str(const char *file);
 
 // Strings: advanced
 char *mx_strncpy(char *dst, const char *src, int len);
+void mx_str_reverse(char *s);

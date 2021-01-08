@@ -122,9 +122,14 @@ int main() {
 
     // mx_printstrn(mx_file_to_str("./src/mx_pow.c"));
 
-    char str1[] = "Hello, Neo. Wake up.";
-    char str2[32];
-    mx_strncpy(str2, str1, 11);
-    mx_printstrn(str2);
+    // char str1[] = "Hello, Neo. Wake up.";
+    // char str2[32];
+    // mx_strncpy(str2, str1, 11);
+    // mx_printstrn(str2);
+
+    char str[] = "Game-over";
+    mx_printstrn(str);
+    mx_str_reverse(str);
+    mx_printstrn(str);
 
 }
