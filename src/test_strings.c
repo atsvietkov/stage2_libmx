@@ -127,9 +127,12 @@ int main() {
     // mx_strncpy(str2, str1, 11);
     // mx_printstrn(str2);
 
-    char str[] = "Game-over";
-    mx_printstrn(str);
-    mx_str_reverse(str);
-    mx_printstrn(str);
+    // char str[] = "Game-over";
+    // mx_printstrn(str);
+    // mx_str_reverse(str);
+    // mx_printstrn(str);
+
+    // char str[] = "Hello, Neo. Wake up.";
+    // mx_printstrn(mx_strndup(str, 40));
 
 }
