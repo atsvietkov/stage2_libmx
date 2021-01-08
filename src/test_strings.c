@@ -120,6 +120,6 @@ int main() {
 
     // mx_del_strarr() // TODO
 
-    
+    // mx_printstrn(mx_file_to_str("./src/mx_pow.c"));
 
 }

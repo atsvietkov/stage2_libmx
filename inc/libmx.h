@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <malloc.h>
+#include <fcntl.h>
 
 // not task func
 void mx_printstrn(const char *s);
@@ -43,3 +44,4 @@ char *mx_strdup(const char *s1);
 char *mx_strjoin(const char *s1, const char *s2);
 void mx_strdel(char **str);
 void mx_del_strarr(char ***arr);
+char *mx_file_to_str(const char *file);
