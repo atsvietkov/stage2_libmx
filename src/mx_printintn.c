@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void mx_printintn(int n) {
     mx_printint(n);

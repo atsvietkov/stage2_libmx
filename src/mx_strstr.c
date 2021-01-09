@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 char *mx_strstr(const char *haystack, const char *needle) {
     int needle_len = mx_strlen(needle);

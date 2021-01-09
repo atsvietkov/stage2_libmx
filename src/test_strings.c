@@ -149,11 +149,17 @@ int main() {
     // mx_printintn(mx_count_words(str, ' '));     // returns 5
     // mx_printintn(mx_count_words(NULL, ' '));    // returns -1
 
-    char str[] = "yoyoyoy Neo";
-    char sub[] = "yoy";
-    mx_printintn(mx_count_substr(str, sub));    // returns 3
-    mx_printintn(mx_count_substr(str, NULL));   // returns -1
-    mx_printintn(mx_count_substr(NULL, sub));   // returns -1
-    mx_printintn(mx_count_substr(str, ""));    // returns 0
+    // char str[] = "yoyoyoy Neo";
+    // char sub[] = "yoy";
+    // mx_printintn(mx_count_substr(str, sub));    // returns 3
+    // mx_printintn(mx_count_substr(str, NULL));   // returns -1
+    // mx_printintn(mx_count_substr(NULL, sub));   // returns -1
+    // mx_printintn(mx_count_substr(str, ""));    // returns 0
 
+    char str[] = "Hello, Neo. Wake up.";
+    mx_printintn(mx_get_char_index(str, 'o'));
+    mx_printintn(mx_get_char_index(str, 'W'));
+    mx_printintn(mx_get_char_index(str, ' '));
+    mx_printintn(mx_get_char_index(str, 'x'));
+    mx_printintn(mx_get_char_index(NULL, '7'));
 }

@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void mx_print_intarr(int *arr, int n) {
     int i = 0;
