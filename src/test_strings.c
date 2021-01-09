@@ -144,9 +144,16 @@ int main() {
     // mx_printstrn(str);
     // mx_printstrn(strstr(str, "Wak"));
 
-    char str[] = "  follow  *   the  white rabbit   ";
-    mx_printintn(mx_count_words(str, '*'));     // returns 2
-    mx_printintn(mx_count_words(str, ' '));     // returns 5
-    mx_printintn(mx_count_words(NULL, ' '));    // returns -1
+    // char str[] = "  follow  *   the  white rabbit   ";
+    // mx_printintn(mx_count_words(str, '*'));     // returns 2
+    // mx_printintn(mx_count_words(str, ' '));     // returns 5
+    // mx_printintn(mx_count_words(NULL, ' '));    // returns -1
+
+    char str[] = "yoyoyoy Neo";
+    char sub[] = "yoy";
+    mx_printintn(mx_count_substr(str, sub));    // returns 3
+    mx_printintn(mx_count_substr(str, NULL));   // returns -1
+    mx_printintn(mx_count_substr(NULL, sub));   // returns -1
+    mx_printintn(mx_count_substr(str, ""));    // returns 0
 
 }

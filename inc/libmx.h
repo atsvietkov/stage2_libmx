@@ -54,3 +54,4 @@ void mx_str_reverse(char *s);
 char *mx_strndup(const char *s1, size_t n);
 char *mx_strstr(const char *haystack, const char *needle);
 int mx_count_words(const char *str, char delimeter);
+int mx_count_substr(const char *str, const char *sub);
