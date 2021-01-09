@@ -122,6 +122,8 @@ int main() {
 
     // mx_printstrn(mx_file_to_str("./src/mx_pow.c"));
 
+    // mx_read_line();  // TODO
+
     // char str1[] = "Hello, Neo. Wake up.";
     // char str2[32];
     // mx_strncpy(str2, str1, 11);
@@ -134,5 +136,12 @@ int main() {
 
     // char str[] = "Hello, Neo. Wake up.";
     // mx_printstrn(mx_strndup(str, 40));
+
+    char str[] = "Hello, Neo. Wake up.";
+    mx_printintn(mx_strncmp(str, "Hello,", 6));
+    mx_printstrn(str);
+    mx_printstrn(mx_strstr(str, "Wak"));
+    mx_printstrn(str);
+    mx_printstrn(strstr(str, "Wak"));
 
 }

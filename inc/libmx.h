@@ -14,6 +14,7 @@
 void mx_printstrn(const char *s);
 void mx_printintn(int n);
 void mx_print_intarr(int *arr, int n);
+int mx_strncmp(const char *s1, const char *s2, int n);
 
 //Utils: basic
 void mx_printchar(char c);
@@ -51,3 +52,4 @@ char *mx_file_to_str(const char *file);
 char *mx_strncpy(char *dst, const char *src, int len);
 void mx_str_reverse(char *s);
 char *mx_strndup(const char *s1, size_t n);
+char *mx_strstr(const char *haystack, const char *needle);
