@@ -163,11 +163,14 @@ int main() {
     // mx_printintn(mx_get_char_index(str, 'x'));
     // mx_printintn(mx_get_char_index(NULL, '7'));
 
-    mx_printintn(mx_get_substr_index("McDonalds", "Don"));          // returns 2
-    mx_printintn(mx_get_substr_index("McDonalds Donuts", "on"));    // returns 3
-    mx_printintn(mx_get_substr_index("McDonalds", "Donatello"));    // returns -1
-    mx_printintn(mx_get_substr_index("McDonalds", NULL));           // returns -2
-    mx_printintn(mx_get_substr_index(NULL, "Don"));                 // returns -2
-    mx_printintn(mx_get_substr_index("McDonalds", "McDonalds"));    // returns 0
-    mx_printintn(mx_get_substr_index("McDonalds", "McDonalds1"));   // returns -1
+    // mx_printintn(mx_get_substr_index("McDonalds", "Don"));          // returns 2
+    // mx_printintn(mx_get_substr_index("McDonalds Donuts", "on"));    // returns 3
+    // mx_printintn(mx_get_substr_index("McDonalds", "Donatello"));    // returns -1
+    // mx_printintn(mx_get_substr_index("McDonalds", NULL));           // returns -2
+    // mx_printintn(mx_get_substr_index(NULL, "Don"));                 // returns -2
+    // mx_printintn(mx_get_substr_index("McDonalds", "McDonalds"));    // returns 0
+    // mx_printintn(mx_get_substr_index("McDonalds", "McDonalds1"));   // returns -1
+
+    char name[] = "\f\t   My name... is Neo\t\n";
+    mx_printstrn(mx_strtrim(name));     // returns "My name... is Neo"
 }

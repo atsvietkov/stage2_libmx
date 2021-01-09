@@ -15,6 +15,7 @@ void mx_printstrn(const char *s);
 void mx_printintn(int n);
 void mx_print_intarr(int *arr, int n);
 int mx_strncmp(const char *s1, const char *s2, int n);
+bool mx_isspace(char c);
 
 //Utils: basic
 void mx_printchar(char c);
@@ -57,3 +58,4 @@ int mx_count_words(const char *str, char delimeter);
 int mx_count_substr(const char *str, const char *sub);
 int mx_get_char_index(const char *str, char c);
 int mx_get_substr_index(const char *str, const char *sub);
+char *mx_strtrim(const char *str);
