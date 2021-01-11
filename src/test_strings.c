@@ -174,17 +174,24 @@ int main() {
     // char name[] = "\f\t   My name... is Neo\t\n";
     // mx_printstrn(mx_strtrim(name));     // returns "My name... is Neo"
 
-    char name[] = "\t. .  .   .    My name...     is     Neo   .   ";
-    mx_printchar('|');
-    mx_printstr(name);
-    mx_printchar('|');
-    mx_printchar(10);
-    mx_printchar('|');
-    mx_printstr(mx_strtrim(name));
-    mx_printchar('|');
-    mx_printchar(10);
-    mx_printchar('|');
-    mx_printstr(mx_del_extra_spaces(name));
-    mx_printchar('|');
-    mx_printchar(10);
+    // char name[] = "\t. .  .   .    My name...     is     Neo   .   ";
+    // mx_printchar('|');
+    // mx_printstr(name);
+    // mx_printchar('|');
+    // mx_printchar(10);
+    // mx_printchar('|');
+    // mx_printstr(mx_strtrim(name));
+    // mx_printchar('|');
+    // mx_printchar(10);
+    // mx_printchar('|');
+    // mx_printstr(mx_del_extra_spaces(name));
+    // mx_printchar('|');
+    // mx_printchar(10);
+
+    char s1[] = "**Good bye,**Mr.*Anderson.****";
+    char **arr1 = mx_strsplit(s1, '-');
+    mx_print_strarr_br(arr1);
+    char s2[] = "Knock, knock,    Neo.   ";
+    char **arr2 = mx_strsplit(s2, ' ');
+    mx_print_strarr_br(arr2);
 }

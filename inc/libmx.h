@@ -2,7 +2,7 @@
 
 #define INT_MAX  2147483647
 #define INT_MIN -2147483648
-#define LONG MAX 4294967295
+#define UNSIGNED_MAX 4294967295
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -10,12 +10,13 @@
 #include <malloc.h>
 #include <fcntl.h>
 
-// not task func
+// not task functions
 void mx_printstrn(const char *s);
 void mx_printintn(int n);
 void mx_print_intarr(int *arr, int n);
 int mx_strncmp(const char *s1, const char *s2, int n);
 bool mx_isspace(char c);
+void mx_print_strarr_br(char **arr);
 
 //Utils: basic
 void mx_printchar(char c);
@@ -25,10 +26,10 @@ void mx_printint(int n);
 char *mx_nbr_to_hex(unsigned long nbr);
 int mx_bubble_sort(int *arr, int size);
 int mx_quicksort(int *arr, int left, int right);    // check validity
-//char *mx_itoa(int number);
+// TODO char *mx_itoa(int number);                        
 
 //Utils: advanced
-//void mx_print_unicode(wchar_t c);
+// TODO void mx_print_unicode(wchar_t c);
 double mx_pow(double n, unsigned int pow);
 int mx_sqrt(int x);
 unsigned long mx_hex_to_nbr(const char *hex);
@@ -47,7 +48,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 void mx_strdel(char **str);
 void mx_del_strarr(char ***arr);
 char *mx_file_to_str(const char *file);
-// int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
+// TODO int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
 
 // Strings: advanced
 char *mx_strncpy(char *dst, const char *src, int len);
@@ -60,3 +61,4 @@ int mx_get_char_index(const char *str, char c);
 int mx_get_substr_index(const char *str, const char *sub);
 char *mx_strtrim(const char *str);
 char *mx_del_extra_spaces(const char *str);
+char **mx_strsplit(const char *s, char c);
