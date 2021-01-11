@@ -62,3 +62,4 @@ int mx_get_substr_index(const char *str, const char *sub);
 char *mx_strtrim(const char *str);
 char *mx_del_extra_spaces(const char *str);
 char **mx_strsplit(const char *s, char c);
+char *mx_replace_substr(const char *str, const char *sub, const char *replace);
