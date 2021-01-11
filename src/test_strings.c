@@ -171,6 +171,20 @@ int main() {
     // mx_printintn(mx_get_substr_index("McDonalds", "McDonalds"));    // returns 0
     // mx_printintn(mx_get_substr_index("McDonalds", "McDonalds1"));   // returns -1
 
-    char name[] = "\f\t   My name... is Neo\t\n";
-    mx_printstrn(mx_strtrim(name));     // returns "My name... is Neo"
+    // char name[] = "\f\t   My name... is Neo\t\n";
+    // mx_printstrn(mx_strtrim(name));     // returns "My name... is Neo"
+
+    char name[] = "\t. .  .   .    My name...     is     Neo   .   ";
+    mx_printchar('|');
+    mx_printstr(name);
+    mx_printchar('|');
+    mx_printchar(10);
+    mx_printchar('|');
+    mx_printstr(mx_strtrim(name));
+    mx_printchar('|');
+    mx_printchar(10);
+    mx_printchar('|');
+    mx_printstr(mx_del_extra_spaces(name));
+    mx_printchar('|');
+    mx_printchar(10);
 }
