@@ -188,10 +188,14 @@ int main() {
     // mx_printchar('|');
     // mx_printchar(10);
 
-    char s1[] = "**Good bye,**Mr.*Anderson.****";
-    char **arr1 = mx_strsplit(s1, '-');
-    mx_print_strarr_br(arr1);
-    char s2[] = "Knock, knock,    Neo.   ";
-    char **arr2 = mx_strsplit(s2, ' ');
-    mx_print_strarr_br(arr2);
+    // char s1[] = "**Good bye,**Mr.*Anderson.****";
+    // char **arr1 = mx_strsplit(s1, '-');
+    // mx_print_strarr_br(arr1);
+    // char s2[] = "Knock, knock,    Neo.   ";
+    // char **arr2 = mx_strsplit(s2, ' ');
+    // mx_print_strarr_br(arr2);
+
+    mx_printstrn(mx_replace_substr("McDonalds", "alds", "uts"));    // returns "McDonuts"
+    mx_printstrn(mx_replace_substr("Ururu turu", "ru", "x"));      // returns "Utata tuta"
+    mx_printstrn(mx_replace_substr("abcdef", "abcdef", "0123")); 
 }

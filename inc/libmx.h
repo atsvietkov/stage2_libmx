@@ -17,6 +17,7 @@ void mx_print_intarr(int *arr, int n);
 int mx_strncmp(const char *s1, const char *s2, int n);
 bool mx_isspace(char c);
 void mx_print_strarr_br(char **arr);
+char *mx_strncat(char *restrict s1, const char *restrict s2, int n);
 
 //Utils: basic
 void mx_printchar(char c);
