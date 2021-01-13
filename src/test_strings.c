@@ -195,7 +195,13 @@ int main() {
     // char **arr2 = mx_strsplit(s2, ' ');
     // mx_print_strarr_br(arr2);
 
-    mx_printstrn(mx_replace_substr("McDonalds", "alds", "uts"));    // returns "McDonuts"
-    mx_printstrn(mx_replace_substr("Ururu turu", "ru", "x"));      // returns "Utata tuta"
-    mx_printstrn(mx_replace_substr("abcdef", "abcdef", "0123")); 
+    mx_printstrn(mx_replace_substr("McDonalds tru", "alds", "uts"));    // returns "McDonuts"
+    mx_printstrn(mx_replace_substr("Ururu turupru oruel", "ru", "kyky"));      // returns "Utata tuta"
+    mx_printstrn(mx_replace_substr("cdabcdef", "cd", ""));
+    mx_printstrn(mx_replace_substr("abcdef", "0", "0123"));
+    mx_printstrn(mx_replace_substr("abcdef", NULL, "0123"));
+    mx_printstrn(mx_replace_substr(NULL, "cd", "32"));
+    mx_printstrn(mx_replace_substr("abcdef", "0", NULL));
+    mx_printstrn(mx_replace_substr("", "", "0123"));
+    mx_printstrn(mx_replace_substr("", "1", "0123"));
 }
