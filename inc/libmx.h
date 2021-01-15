@@ -69,3 +69,4 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace);
 void *mx_memset(void *b, int c, size_t len);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
 int mx_memcmp(const void *s1, const void *s2, size_t n);
+void *mx_realloc(void *ptr, size_t size);
