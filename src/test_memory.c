@@ -43,14 +43,21 @@ int main() {
     // mx_strcat(arr2, ", Neo");
     // mx_printstrn(arr2);
 
-    char *arr1 = mx_strdup("Hello.");
-    mx_printstrn(arr1);
-    char *arr2 = mx_strnew(6);
-    mx_memmove(arr2, arr1, 1);
-    mx_printstrn(arr2);
-    mx_memmove(arr2, arr1, 3);
-    mx_printstrn(arr2);
-    mx_memmove(arr2, arr1, 6);
-    mx_printstrn(arr2);
+    // char *arr1 = mx_strdup("Hello.");
+    // mx_printstrn(arr1);
+    // char *arr2 = mx_strnew(6);
+    // mx_memmove(arr2, arr1, 1);
+    // mx_printstrn(arr2);
+    // mx_memmove(arr2, arr1, 3);
+    // mx_printstrn(arr2);
+    // mx_memmove(arr2, arr1, 6);
+    // mx_printstrn(arr2);
+
+    mx_printstrn(mx_memrchr("Trinity", 'i', 5));  // returns "ity"
+    mx_printstrn(mx_memrchr("Trinity", 'i', 3));  // returns "inity"
+    mx_printstrn(mx_memrchr("Trinity", 'T', 1));  // returns "Trinity"
+    mx_printstrn(mx_memrchr("Trinity", 'T', 7));  // returns "Trinity"
+    mx_printstrn(mx_memrchr("Trinity", 'n', 1));  // returns "Trinity"
+    mx_printstrn(mx_memrchr("Trinity", 'n', 7));  // returns "Trinity"
 
 }
