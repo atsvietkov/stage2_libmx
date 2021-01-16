@@ -35,12 +35,22 @@ int main() {
     // mx_printintn(mx_memcmp(arr4, arr1, 4*sizeof(char)));
     // mx_printintn(mx_memcmp(arr4, arr1, 5*sizeof(char)));
 
-    char *arr1 = mx_strnew(5);
-    mx_strcpy(arr1, "Hello");
+    // char *arr1 = mx_strnew(5);
+    // mx_strcpy(arr1, "Hello");
+    // mx_printstrn(arr1);
+    // char *arr2 = realloc(arr1, 10);
+    // // arr1 = mx_realloc(arr1, 10);
+    // mx_strcat(arr2, ", Neo");
+    // mx_printstrn(arr2);
+
+    char *arr1 = mx_strdup("Hello.");
     mx_printstrn(arr1);
-    char *arr2 = realloc(arr1, 10);
-    // arr1 = mx_realloc(arr1, 10);
-    mx_strcat(arr2, ", Neo");
+    char *arr2 = mx_strnew(6);
+    mx_memmove(arr2, arr1, 1);
+    mx_printstrn(arr2);
+    mx_memmove(arr2, arr1, 3);
+    mx_printstrn(arr2);
+    mx_memmove(arr2, arr1, 6);
     mx_printstrn(arr2);
 
 }

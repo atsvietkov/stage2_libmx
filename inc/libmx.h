@@ -70,3 +70,6 @@ void *mx_memset(void *b, int c, size_t len);
 void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n);
 int mx_memcmp(const void *s1, const void *s2, size_t n);
 void *mx_realloc(void *ptr, size_t size);
+
+// Memory: advanced
+void *mx_memmove(void*dst, const void*src, size_t len);
