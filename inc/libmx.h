@@ -18,6 +18,7 @@ int mx_strncmp(const char *s1, const char *s2, int n);
 bool mx_isspace(char c);
 void mx_print_strarr_br(char **arr);
 char *mx_strncat(char *restrict s1, const char *restrict s2, int n);
+int mx_abs(int n);
 
 //Utils: basic
 void mx_printchar(char c);
@@ -27,7 +28,7 @@ void mx_printint(int n);
 char *mx_nbr_to_hex(unsigned long nbr);
 int mx_bubble_sort(int *arr, int size);
 int mx_quicksort(int *arr, int left, int right);    // check validity
-// TODO char *mx_itoa(int number);                        
+char *mx_itoa(int number);                        
 
 //Utils: advanced
 // TODO void mx_print_unicode(wchar_t c);

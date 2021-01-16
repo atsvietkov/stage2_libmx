@@ -1,4 +1,4 @@
-#include "libmx.h"
+#include "../inc/libmx.h"
 
 int main() {
 
@@ -102,12 +102,16 @@ int main() {
 
 
     // TODO
-    // mx_printstrn(mx_itoa(0));
-    // mx_printstrn(mx_itoa(-1));
-    // mx_printstrn(mx_itoa(-11));
-    // mx_printstrn(mx_itoa(128));
-    // mx_printstrn(mx_itoa(INT_MIN));
-    // mx_printstrn(mx_itoa(INT_MAX));
+    mx_printstrn(mx_itoa(123456789));
+    mx_printstrn(mx_itoa(1));
+    mx_printstrn(mx_itoa(12));
+    mx_printstrn(mx_itoa(123));
+    mx_printstrn(mx_itoa(1234));
+    mx_printstrn(mx_itoa(-1));
+    mx_printstrn(mx_itoa(-11));
+    mx_printstrn(mx_itoa(128));
+    mx_printstrn(mx_itoa(INT_MIN));
+    mx_printstrn(mx_itoa(INT_MAX));
     // EOF TODO
 
     // EOF Utils
