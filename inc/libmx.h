@@ -74,3 +74,4 @@ void *mx_realloc(void *ptr, size_t size);
 // Memory: advanced
 void *mx_memmove(void*dst, const void*src, size_t len);
 void *mx_memrchr(const void *s, int c, size_t n);
+void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
