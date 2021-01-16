@@ -4,35 +4,43 @@
 int main() {
     // Memory: basic
 
-    // int arr[10] = { 3,3,3,3,3,3,3,3,3,3 };
-    // mx_print_intarr(arr, 10);
-    // mx_memset(arr, 2, 10*sizeof(int));
-    // mx_print_intarr(arr, 10);
+    // char*arr = mx_strnew(10);
+    // mx_memset(arr, '2', 5*sizeof(char));
+    // mx_printstrn(arr);
+    // mx_memset(arr, '1', 10*sizeof(char));
+    // mx_printstrn(arr);
 
-    // int arr1[10];
-    // int arr2[10];
-    // mx_memset(arr1, 0, 10 * sizeof(int));
-    // mx_memset(arr2, 1, 10 * sizeof(int));
-    // mx_print_intarr(arr1, 10);
-    // mx_print_intarr(arr2, 10);
-    // mx_memcpy(arr2, arr1, 10 * sizeof(int));
-    // mx_print_intarr(arr1, 10);
-    // mx_print_intarr(arr2, 10);
+    // char *arr1 = mx_strnew(10);
+    // char *arr2 = mx_strnew(10);
+    // mx_memset(arr1, '1', 10*sizeof(char));
+    // mx_memset(arr2, '2', 10*sizeof(char));
+    // mx_printstrn(arr1);
+    // mx_printstrn(arr2);
+    // mx_printstrn("----");
+    // mx_memcpy(arr2, arr1, 5*sizeof(char));
+    // mx_printstrn(arr1);
+    // mx_printstrn(arr2);
 
-    // int arr1[10];
-    // int arr2[10];
-    // mx_memset(arr1, 0, 10*sizeof(int));
-    // mx_memset(arr2, 0, 10*sizeof(int));
-    // arr2[9] = 2;
-    // mx_printintn(mx_memcmp(arr1, arr2, 10*sizeof(int)));
+    // char *arr1 = mx_strnew(10);
+    // char *arr2 = mx_strnew(10);
+    // char *arr3 = mx_strnew(10);
+    // char *arr4 = mx_strnew(10);
+    // mx_memset(arr1, '1', 10*sizeof(char));
+    // mx_memset(arr2, '2', 10*sizeof(char));
+    // mx_memset(arr3, '3', 10*sizeof(char));
+    // mx_strcpy(arr4, "111122");
+    // mx_printintn(mx_memcmp(arr1, arr1, 10*sizeof(char)));
+    // mx_printintn(mx_memcmp(arr2, arr1, 10*sizeof(char)));
+    // mx_printintn(mx_memcmp(arr3, arr1, 10*sizeof(char)));
+    // mx_printintn(mx_memcmp(arr4, arr1, 4*sizeof(char)));
+    // mx_printintn(mx_memcmp(arr4, arr1, 5*sizeof(char)));
 
-    char *arr1 = mx_strnew(10);
-    mx_strcpy(arr1, "Hello, Neo");
+    char *arr1 = mx_strnew(5);
+    mx_strcpy(arr1, "Hello");
     mx_printstrn(arr1);
-    mx_printintn(malloc_usable_size(arr1));
-    char *arr2;
-    arr2 = (char*)mx_realloc(arr1, 1);
-    printf("%s\n", arr2);
-    mx_printintn(malloc_usable_size(arr2));
+    char *arr2 = realloc(arr1, 10);
+    // arr1 = mx_realloc(arr1, 10);
+    mx_strcat(arr2, ", Neo");
+    mx_printstrn(arr2);
 
 }

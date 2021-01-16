@@ -9,15 +9,15 @@ void *mx_realloc(void *ptr, size_t size) {
         return ptr;
     }
     else {
-        char *new = mx_strnew(size);
+        char *new = malloc(size);
         if(!new) {
-            // return NULL;
+            return NULL;
         }
         else {
             mx_memcpy(new, ptr, size);
-            mx_strdel(ptr);
+            free(ptr);
             return new;
         }
     }
-    return NULL;
+    // return NULL;
 }
