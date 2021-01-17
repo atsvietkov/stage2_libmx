@@ -50,7 +50,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 void mx_strdel(char **str);
 void mx_del_strarr(char ***arr);
 char *mx_file_to_str(const char *file);
-// TODO int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);
+int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);    // TODO
 
 // Strings: advanced
 char *mx_strncpy(char *dst, const char *src, int len);
