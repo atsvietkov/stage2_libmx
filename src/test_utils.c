@@ -100,19 +100,28 @@ int main() {
     // mx_print_intarr(arr12,8);
     // mx_printstrn("--------");
 
+    // mx_printstrn(mx_itoa(123456789));
+    // mx_printstrn(mx_itoa(1));
+    // mx_printstrn(mx_itoa(12));
+    // mx_printstrn(mx_itoa(123));
+    // mx_printstrn(mx_itoa(1234));
+    // mx_printstrn(mx_itoa(-1));
+    // mx_printstrn(mx_itoa(-11));
+    // mx_printstrn(mx_itoa(128));
+    // mx_printstrn(mx_itoa(INT_MIN));
+    // mx_printstrn(mx_itoa(INT_MAX));
 
-    // TODO
-    mx_printstrn(mx_itoa(123456789));
-    mx_printstrn(mx_itoa(1));
-    mx_printstrn(mx_itoa(12));
-    mx_printstrn(mx_itoa(123));
-    mx_printstrn(mx_itoa(1234));
-    mx_printstrn(mx_itoa(-1));
-    mx_printstrn(mx_itoa(-11));
-    mx_printstrn(mx_itoa(128));
-    mx_printstrn(mx_itoa(INT_MIN));
-    mx_printstrn(mx_itoa(INT_MAX));
-    // EOF TODO
+    // mx_print_unicode(0x41f);
+    // mx_print_unicode(0x440);
+    // mx_print_unicode(0x438);
+    // mx_print_unicode(0x432);
+    // mx_print_unicode(0x435);
+    // mx_print_unicode(0x442);
+    // mx_print_unicode(0x20);
+    // mx_print_unicode(0x41c);
+    // mx_print_unicode(0x438);
+    // mx_print_unicode(0x440);
+
 
     // EOF Utils
 
