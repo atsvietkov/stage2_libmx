@@ -60,9 +60,16 @@ int main() {
     // mx_printstrn(mx_memrchr("Trinity", 'n', 1));  // returns NULL
     // mx_printstrn(mx_memrchr("Trinity", 'n', 7));  // returns "nity"
 
-    char *arr = mx_strnew(20);
-    mx_memccpy(arr, "Hello, Neo", 'N', 20);
-    mx_printstrn(arr);
+    // char *arr = mx_strnew(20);
+    // mx_memccpy(arr, "Hello, Neo", 'N', 20);
+    // mx_printstrn(arr);
+
+    mx_printstrn(mx_memchr("Trinity", 'i', 5));  // returns "inity""
+    mx_printstrn(mx_memchr("Trinity", 'i', 3));  // returns "inity"
+    mx_printstrn(mx_memchr("Trinity", 'y', 1));  // returns "Trinity"
+    mx_printstrn(mx_memchr("Trinity", 'y', 7));  // returns "Trinity"
+    mx_printstrn(mx_memchr("Trinity", 'n', 1));  // returns NULL
+    mx_printstrn(mx_memchr("Trinity", 'n', 7));  // returns "nity"
 
 
 }

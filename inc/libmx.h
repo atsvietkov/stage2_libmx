@@ -50,7 +50,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 void mx_strdel(char **str);
 void mx_del_strarr(char ***arr);
 char *mx_file_to_str(const char *file);
-int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);    // TODO
+// int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd);    // TODO
 
 // Strings: advanced
 char *mx_strncpy(char *dst, const char *src, int len);
@@ -76,3 +76,4 @@ void *mx_realloc(void *ptr, size_t size);
 void *mx_memmove(void*dst, const void*src, size_t len);
 void *mx_memrchr(const void *s, int c, size_t n);
 void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
+void *mx_memchr(const void *s, int c, size_t n);
