@@ -64,12 +64,25 @@ int main() {
     // mx_memccpy(arr, "Hello, Neo", 'N', 20);
     // mx_printstrn(arr);
 
-    mx_printstrn(mx_memchr("Trinity", 'i', 5));  // returns "inity""
-    mx_printstrn(mx_memchr("Trinity", 'i', 3));  // returns "inity"
-    mx_printstrn(mx_memchr("Trinity", 'y', 1));  // returns "Trinity"
-    mx_printstrn(mx_memchr("Trinity", 'y', 7));  // returns "Trinity"
-    mx_printstrn(mx_memchr("Trinity", 'n', 1));  // returns NULL
-    mx_printstrn(mx_memchr("Trinity", 'n', 7));  // returns "nity"
+    // mx_printstrn(mx_memchr("Trinity", 'i', 5));  // returns "inity""
+    // mx_printstrn(mx_memchr("Trinity", 'i', 3));  // returns "inity"
+    // mx_printstrn(mx_memchr("Trinity", 'y', 1));  // returns "Trinity"
+    // mx_printstrn(mx_memchr("Trinity", 'y', 7));  // returns "Trinity"
+    // mx_printstrn(mx_memchr("Trinity", 'n', 1));  // returns NULL
+    // mx_printstrn(mx_memchr("Trinity", 'n', 7));  // returns "nity"
+
+    char *str0 = mx_strdup("Follow the white rabbit. Wake up, Neo.");
+    char *str1 = mx_strdup("white rabbit");
+    char *str2 = mx_strdup(". Wake");
+    char *str3 = mx_strdup(".Wake");
+    char *str4 = mx_strdup("Follow the white rabbit. Wake up, Neo. ");
+    mx_printstrn(mx_memmem(str0, mx_strlen(str0), str1, mx_strlen(str1)));
+    mx_printstrn(mx_memmem(str0, mx_strlen(str0), str2, mx_strlen(str2)));
+    mx_printstrn(mx_memmem(str0, mx_strlen(str0), str3, mx_strlen(str3)));
+    mx_printstrn(mx_memmem(str0, mx_strlen(str0), str4, mx_strlen(str4)));
+    // mx_printstrn(mx_memmem(str0, mx_strlen(str0), str1, mx_strlen(str1)));
+    // mx_printstrn(mx_memmem(str0, mx_strlen(str0), str1, mx_strlen(str1)));
+
 
 
 }
