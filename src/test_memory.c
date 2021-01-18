@@ -80,9 +80,4 @@ int main() {
     mx_printstrn(mx_memmem(str0, mx_strlen(str0), str2, mx_strlen(str2)));
     mx_printstrn(mx_memmem(str0, mx_strlen(str0), str3, mx_strlen(str3)));
     mx_printstrn(mx_memmem(str0, mx_strlen(str0), str4, mx_strlen(str4)));
-    // mx_printstrn(mx_memmem(str0, mx_strlen(str0), str1, mx_strlen(str1)));
-    // mx_printstrn(mx_memmem(str0, mx_strlen(str0), str1, mx_strlen(str1)));
-
-
-
 }
