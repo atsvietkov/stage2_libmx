@@ -80,3 +80,5 @@ void *mx_memmem(const void *big, size_t big_len, const void *little, size_t litt
 
 // List
 t_list *mx_create_node(void *data);
+void mx_push_front(t_list **list, void *data);
+void mx_push_back(t_list **list, void *data);
