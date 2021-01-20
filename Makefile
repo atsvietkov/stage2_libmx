@@ -23,7 +23,7 @@ install:
 	@ranlib $(NAME)
 
 uninstall:
-	@rm -rf $(NAME)
+	@rm -f $(NAME)
 	@make clean
 
 clean:
