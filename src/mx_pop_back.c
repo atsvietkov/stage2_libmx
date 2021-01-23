@@ -1,7 +1,7 @@
 #include "libmx.h"
 
 void mx_pop_back(t_list **head) {
-    t_list *del_node  = NULL;
+    t_list *del_node = NULL;
     if(head == NULL || *head == NULL) {
         return;
     }
@@ -11,7 +11,7 @@ void mx_pop_back(t_list **head) {
     }
     else {
         del_node = *head;
-        while(del_node->next->next) {
+        while(del_node && del_node->next->next) {
             del_node = del_node->next;
         }
         free(del_node->next);
