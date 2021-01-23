@@ -1,34 +1,42 @@
-# It is not Makefile, it is bullshit.
-# Don't forget repair this.
+#	Final version of Makefile
 
-CC = clang
-CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
+.PHONY: all clean install uninstall
 
 NAME = libmx.a
-
 SRCD = src
 INCD = inc
 OBJD = obj
 
-SRC = $(addprefix $(SRCD)/, mx_*.c)
-OBJ = $(addprefix $(OBJD)/, *.o)
+CC = clang
+CFLAGS = -std=c11 $(addprefix -W, all extra error pedantic)
 
-all: install
+AR = ar
+ARFLAGS = rcs
 
-install:
-	@mkdir -p $(OBJD)
-	$(CC) $(CFLAGS) -c $(SRC) -I $(INCD)
-	@mv *.o $(OBJD)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+MK = mkdir -p
+RM = rm -rf
 
-uninstall:
-	@rm -f $(NAME)
-	@make clean
+SRC = $(addprefix ./$(SRCD)/, mx_*.c)
+INC = $(addprefix ./$(INCD)/, *.h)
+OBJ = $(addprefix ./$(OBJD)/, $(notdir $(SRC:%.c=%.o)))
+
+all:	$(NAME)
+
+$(NAME):	$(OBJ)
+	@$(AR) $(ARFLAGS) $@ $^
+
+$(OBJ):	$(OBJD)
+
+$(OBJD)/%.o: $(SRCD)/%.c $(INC)
+	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INCD)
+
+$(OBJD):
+	@$(MK) $@
 
 clean:
-	@rm -rf $(OBJD)
+	@$(RM) $(OBJD)
 
-reinstall:
-	@make uninstall
-	@make install
+uninstall: clean
+	@$(RM) $(NAME)
+
+reinstall: uninstall all
