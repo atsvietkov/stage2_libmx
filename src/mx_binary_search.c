@@ -5,6 +5,10 @@ int mx_binary_search(char **arr, int size, const char *s, int *count) {
     int end = size - 1;
     int mid;
     
+    if(!arr || !s || !count || size < 1) {
+        return -1;
+    }
+
     while (1){
         mid = start + (end - start) / 2;
         

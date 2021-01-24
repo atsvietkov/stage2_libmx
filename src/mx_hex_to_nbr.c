@@ -3,6 +3,9 @@
 int mx_tolower(int c);
 
 unsigned long mx_hex_to_nbr(const char *hex) {
+    if(!hex) {
+        return 0;
+    }
     int size = mx_strlen(hex);
     int pow = 0;
     unsigned long result = 0;
