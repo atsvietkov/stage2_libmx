@@ -20,18 +20,16 @@ RM = rm -rf
 SRC = $(wildcard $(SRCD)/*.c)
 INC = $(wildcard $(INCD)/*.h)
 OBJ = $(addprefix $(OBJD)/, $(notdir $(SRC:%.c=%.o)))
-# OBJP = $(wildcard *.o)
 
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
 	@$(AR) $(ARFLAGS) $@ $^
 
-$(OBJ): 	$(OBJD)
+$(OBJ): | 	$(OBJD)
 
 $(OBJD)/%.o: $(SRCD)/%.c $(INC)
-	@$(CC) $(CFLAGS) -c $< -I $(INCD)
-	@$(MV) *.o $(OBJD)
+	@$(CC) $(CFLAGS) -c $< -o $@ -I $(INCD)
 
 $(OBJD):
 	@$(MK) $@
