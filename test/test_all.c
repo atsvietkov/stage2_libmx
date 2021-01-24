@@ -407,13 +407,12 @@ int main() {
     // mx_printstrn(mx_replace_substr("", "", "0123"));
     // mx_printstrn(mx_replace_substr("", "1", "0123"));
 
-    // int fd = open("fragment1", O_RDONLY);
-    // char *str = mx_strnew(128);
-    // // int res = 0;
-    // mx_printintn(mx_read_line(&str, 7, '\n', fd));
-    // mx_printintn(mx_read_line(&str, 35, 'a', fd));
-    // mx_printintn(mx_read_line(&str, 1, '.', fd));
-    // mx_printintn(mx_read_line(&str, 10, '\n', fd));
-
+    int fd = open("fragment1", O_RDONLY);
+    char *str = mx_strnew(128);
+    // int res = 0;
+    mx_printintn(mx_read_line(&str, 7, '\n', fd));
+    mx_printintn(mx_read_line(&str, 35, 'a', fd));
+    mx_printintn(mx_read_line(&str, 1, '.', fd));
+    mx_printintn(mx_read_line(&str, 10, '\n', fd));
 
 }
