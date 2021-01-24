@@ -7,8 +7,13 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <malloc.h>
 #include <fcntl.h>
+
+#ifdef __linux__
+#include <malloc.h>
+#elif __APPLE__
+#include <malloc/malloc.h>
+#endif
 
 typedef struct s_list {
     void *data;

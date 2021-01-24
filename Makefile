@@ -27,7 +27,7 @@ all:	$(NAME)
 $(NAME):	$(OBJ)
 	@$(AR) $(ARFLAGS) $@ $^
 
-$(OBJ): |	$(OBJD)
+$(OBJ): 	$(OBJD)
 
 $(OBJD)/%.o: $(SRCD)/%.c $(INC)
 	@$(CC) $(CFLAGS) -c $< -I $(INCD)
